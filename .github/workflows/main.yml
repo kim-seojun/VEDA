@@ -31,5 +31,4 @@ jobs:
           
       - name: Calc Action
         run: |
-           echo "Hi, I'm a calculator action!"
-           shell: bash
+          echo "Hi, I'm a calculator action!"
