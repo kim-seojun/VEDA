@@ -20,11 +20,11 @@ jobs:
     - name: git clone & synchronize
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.maum2_HOST }}
-        username: ${{ secrets.maum2_USERNAME }}
-        password: ${{ secrets.maum2_PASSWORD }}
-        port: ${{ secrets.maum2_PORT }}
-        script: C:\node_deploy\script\git_clone.bat
+        host: ${{ secrets.MAUM_QA_HOST }}
+        username: ${{ secrets.MAUM_QA_USERNAME }}
+        password: ${{ secrets.MAUM_QA_PASSWORD }}
+        port: ${{ secrets.MAUM_QA_PORT }}
+        script: C:\node_deploy\script\maumplus_depgit_clone.bat
         
     - name: node restart
       uses: appleboy/ssh-action@master
